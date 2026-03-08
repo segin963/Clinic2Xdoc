@@ -1,43 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
+
 <meta charset="UTF-8">
-<title>Запис до лікаря</title>
+<title>Онлайн запис до лікаря</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f2f6fb;
+margin:0;
+}
+
+header{
+background:#2c7be5;
+color:white;
+padding:25px;
+text-align:center;
+font-size:28px;
+}
+
+.container{
+width:400px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+label{
+font-weight:bold;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:20px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:16px;
+}
+
+button{
+width:100%;
+background:#28a745;
+color:white;
+border:none;
+padding:15px;
+font-size:18px;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#218838;
+}
+
+footer{
+text-align:center;
+margin-top:30px;
+color:#777;
+}
+
+.phone{
+font-size:20px;
+color:#2c7be5;
+margin-top:10px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h1>Онлайн запис до лікаря</h1>
+<header>
+КЛІНІКА<br>
+Онлайн запис до лікаря
+</header>
+
+<div class="container">
+
+<h2>Запис на прийом</h2>
 
 <form>
 
-<label>ПІБ</label><br>
-<input type="text"><br><br>
+<label>ПІБ</label>
+<input type="text" placeholder="Ваше ім'я">
 
-<label>Телефон</label><br>
-<input type="text"><br><br>
+<label>Телефон</label>
+<input type="text" placeholder="+380...">
 
-<label>Лікар</label><br>
+<label>Лікар</label>
 <select>
-<option>Іваненко</option>
-<option>Петренко</option>
-<option>Сидоренко</option>
-</select><br><br>
+<option>Терапевт</option>
+<option>Кардіолог</option>
+<option>Невролог</option>
+<option>Педіатр</option>
+</select>
 
-<label>Дата</label><br>
-<input type="date"><br><br>
+<label>Дата</label>
+<input type="date">
 
-<label>Час</label><br>
+<label>Час</label>
 <select>
 <option>09:00</option>
 <option>09:30</option>
 <option>10:00</option>
 <option>10:30</option>
-</select><br><br>
+<option>11:00</option>
+<option>11:30</option>
+</select>
 
-<button type="submit">Записатися</button>
+<button>Записатися</button>
 
 </form>
 
+</div>
+
+<footer>
+
+Телефон реєстратури
+
+<div class="phone">
++38 (000) 000-00-00
+</div>
+
+</footer>
+
 </body>
 </html>
+
